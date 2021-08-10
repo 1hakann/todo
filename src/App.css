@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+/**************************** HTML ATTR **************************/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: 'Ubuntu', sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  box-sizing: border-box;
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-size: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/**************************** Your Custom Css Codes **************************/
+
+.todo-container {
+  margin:auto;
+  padding: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 60rem;
+  height: 99vh;
+  background-color: #46235F;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-body {
+  width: 100%
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.todo-h1 {
+  padding: 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+#todo-form input {
+  background-color: #00678A;
+  font-size: 2rem;
+  color: #ffffff;
+  border: 0;
+  width: 40rem;
+  height: 5rem;
+  padding: 0 2rem;
+  margin: 2rem 2rem 2rem 2.5rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+
+#todo-form input:focus #todo-form button:focus  {
+  /* outline: none; */
+}
+
+#todo-form input::placeholder {
+  color: #ffffff;
+}
+
+#todo-form button {
+  background-color: #DA9B17;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #ffffff;
+  height: 4.8rem;
+  width: 13rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
 }
