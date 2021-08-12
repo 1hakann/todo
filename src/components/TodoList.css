@@ -1,0 +1,36 @@
+/* 13 Add css coded for list area design. */
+
+.list {
+    color: #fff;
+    width: 50rem;
+    background-color: #bf07ac;
+    height: 5rem;
+    margin: 2rem auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+p {
+    display: inline;
+    padding: 1.5rem;
+    position: relative;
+    float: left;
+
+}
+
+span {
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    padding: 1.5rem;
+}
+
+.faicons {
+    margin: 1.8rem 1.5rem;
+    font-size: 24px;
+    float:right;
+    vertical-align: middle;
+}
