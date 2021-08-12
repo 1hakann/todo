@@ -2,7 +2,7 @@
 
 .list {
     color: #fff;
-    width: 30rem;
+    width: 50rem;
     background-color: #bf07ac;
     height: 5rem;
     margin: 2rem auto;
@@ -13,6 +13,24 @@
     -o-border-radius: 5px;
 }
 
-.list p {
-    padding: 1rem;
+p {
+    display: inline;
+    padding: 1.5rem;
+    position: relative;
+    float: left;
+
+}
+
+span {
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    padding: 1.5rem;
+}
+
+.faicons {
+    margin: 1.8rem 1.5rem;
+    font-size: 24px;
+    float:right;
+    vertical-align: middle;
 }

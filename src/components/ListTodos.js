@@ -1,14 +1,14 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { fatrash } from '@fortawesome/free-solid-svg-icons'
 import './ListTodos.css'
 
-// 14- fontawesome ı ekleyelim
-FontAwesomeIcon.add(fatrash)
+import ReactDOM from 'react-dom'
+import { faCoffee, faTrash } from '@fortawesome/free-solid-svg-icons'
 
     //! 8- ListTodos u inşa edelim
     function ListTodos(props) {
+
+        // fontawesome.library.add(faCheckSquare, faCoffee);
 
         //! 9- items i propsa aldık ve tododa ListTodos compunda basabiliriz.
         const items = props.items
@@ -16,6 +16,9 @@ FontAwesomeIcon.add(fatrash)
         const listTodo = items.map(item => {
             return <div className="list" key="item.key">
                 <p>{item.text}</p>
+                <span>
+                    <FontAwesomeIcon className="faicons" icon={faTrash} />
+                </span>
             </div>
         })
 
@@ -23,7 +26,7 @@ FontAwesomeIcon.add(fatrash)
         return (
             <div>
             { listTodo }
-        </div>
+            </div>
         )
     } 
 
