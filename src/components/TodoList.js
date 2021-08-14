@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './TodoList.css'
 
 import ReactDOM from 'react-dom'
-import { faCoffee, faTrash } from '@fortawesome/free-solid-svg-icons'
+import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
     //! 8- Todolist component created
     function TodoList(props) {
@@ -12,11 +12,12 @@ import { faCoffee, faTrash } from '@fortawesome/free-solid-svg-icons'
         const items = props.items
         //! 10- -Since the tasks we received are an object, we converted it to an array with map().
         const listTodo = items.map(item => {
-            return <div className="list" key="item.key">
+            return <div className="list" key={item.key}>
                 <p>{item.text}</p>
                 <span>
-                    {/* //! Fontawesome added to the project and used. */}
-                    <FontAwesomeIcon className="faicons" icon={faTrash} />
+                    {/* //! 14- Fontawesome added to the project and used. */}
+                    {/* //! 15- onclick funct. added */}
+                    <FontAwesomeIcon className="faicons" icon={faTrash} onClick={ () => props.deleteItem(item.key)} />
                 </span>
             </div>
         })

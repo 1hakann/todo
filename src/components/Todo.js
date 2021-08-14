@@ -17,6 +17,8 @@ import TodoList from './TodoList'
         //! 6- Bind operation done.
         this.handleInput = this.handleInput.bind(this)
         this.addTodo = this.addTodo.bind(this)
+        //! 18- binding for delete icon
+        this.deleteItem = this.deleteItem.bind(this)
     }
 
     //! 4-The function (for input) is coded.
@@ -48,6 +50,14 @@ import TodoList from './TodoList'
         }
     }
 
+    /* //! 17- let's define the function  */
+    deleteItem(key) {
+        const filteredItems = this.state.items.filter(item => item.key!==key);
+        this.setState({
+            items: filteredItems
+        })
+    }
+
     render() {
         return (
             //! 1-The main structure has been created. Worked css for app view. (return in render func inside Todo.js)
@@ -60,7 +70,8 @@ import TodoList from './TodoList'
                     <button type="submit">Add Todo</button>
                 </form>
                 {/* 12-Comp Added */}
-                <TodoList items={this.state.items}></TodoList>
+                {/* 16-Add the function added above as attribute to the listItem Component in todo. */}
+                <TodoList items={this.state.items} deleteItem={this.deleteItem}></TodoList>
                 </div>
             </div>
         )
