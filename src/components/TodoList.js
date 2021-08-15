@@ -1,5 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import FlipMove from 'react-flip-move';
 import './TodoList.css'
 
 import ReactDOM from 'react-dom'
@@ -31,7 +32,9 @@ import { faTrash, faPen } from '@fortawesome/free-solid-svg-icons'
         //! 11-And we showed this in return.
         return (
             <div>
-            { listTodo }
+                <FlipMove duration={500} easing="ease-in-out">
+                    { listTodo }
+                </FlipMove>
             </div>
         )
     } 
