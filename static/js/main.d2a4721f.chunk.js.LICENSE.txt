@@ -1,0 +1,21 @@
+//! 1-The main structure has been created. Worked css for app view. (return in render func inside Todo.js)
+
+//! 10- -Since the tasks we received are an object, we converted it to an array with map().
+
+//! 11-And we showed this in return.
+
+//! 18- binding for delete icon
+
+//! 2-Constructor was created and received props and state.
+
+//! 4-The function (for input) is coded.
+
+//! 5- The function (for form) is coded.
+
+//! 6- Bind operation done.
+
+//! 7-Item 5 has been developed.
+
+//! 8- Todolist component created
+
+//! 9- We got the props as items so we can use it in the ListTodos comp in the todo.
