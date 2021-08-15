@@ -2,11 +2,12 @@
 
 .list {
     color: #fff;
-    width: 50rem;
+    width: 55rem;
     background-color: #bf07ac;
-    height: 5rem;
+    height: 5.2rem;
     margin: 2rem auto;
     border-radius: 5px;
+    visibility: display;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -16,21 +17,31 @@
 p {
     display: inline;
     padding: 1.5rem;
-    position: relative;
     float: left;
 
 }
 
 span {
     display: inline;
-    position: relative;
     cursor: pointer;
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
 }
 
 .faicons {
-    margin: 1.8rem 1.5rem;
     font-size: 24px;
     float:right;
+    vertical-align: center;
+}
+
+.editInput {
+    width: 750px;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 30px;
     vertical-align: middle;
+}
+
+.editInput:focus {
+    outline: none;
 }
